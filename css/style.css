@@ -78,6 +78,7 @@ li a:hover {
 /*Fin barra de navegacion*/
 
 
+
 h1 {
     margin-top: 4rem;
     margin-bottom: 2em;
@@ -117,6 +118,7 @@ h2 {
     margin: 50px auto;
 }
 
+
 /*Inicio formulario de subscripcion*/
 .contenido__suscripcion {
     font-size: 1.5rem;
@@ -125,6 +127,7 @@ h2 {
     color: #fff;
     align-items: center;
     margin-bottom: 3em;
+
 
 }
 
@@ -145,20 +148,22 @@ h2 {
     outline: 0px;
 }
 
-.contenido__suscripcion form .boton__sub {
+
+.boton {
     width: 150px;
     height: 50px;
     padding: 15px 15px;
-    border: none;
+    border: solid 1px;
+    border-color: #edff00;
     border-radius: 0px 3px 3px 0px;
-    background-color: #696954;
+    background-color: transparent;
     color: white;
     cursor: pointer;
     outline: 0px;
 
 }
 
-.contenido__suscripcion form .boton__sub:hover {
+/*.contenido__suscripcion form*/ .boton:hover {
     background: #edff00;
     transition: .5s all;
     color: black;
@@ -166,6 +171,7 @@ h2 {
 
 /*Fin formulario de subscripcion*/
 /*Fin página INICIO*/
+
 
 /*Específicos página NOSOTROS*/
 .foto__local {
@@ -175,6 +181,7 @@ h2 {
 
 /*Fin  NOSOTROS*/
 
+
 /*Específicos página UBICACION*/
 .ubicacion__mapa {
     margin-bottom: 2em;    
@@ -183,6 +190,7 @@ h2 {
 }
 
 /*Fin  UBICACION*/
+
 
 
 
@@ -207,6 +215,7 @@ h2 {
     align-items: center; 
     margin-top: -5%;
 }
+
 
 .contacto
 {
@@ -243,6 +252,7 @@ h2 {
     text-align: center;
 }
 
+
 .contact-form-txt
 {
     width: 100%;
@@ -276,21 +286,19 @@ h2 {
     color: #aaa;
 }
 
-.contact-form-btn
+.contacto__formulario .boton
 {
     width: 100%;
-    border:none;
     outline: none;
-    border-radius: 3px;
-    background: #edff00;
-    color: #000;
+    border-radius: 3px;     
     text-transform: uppercase;
     padding: 10px 0;
-    cursor: pointer;
+   /* cursor: pointer;*/
     font-size: 18px;
 }
 
 /*Fin CONTACTO*/
+
 
 
 /*Inicio del FOOTER*/
@@ -331,11 +339,13 @@ footer .copy {
 
 /*Fin del footer*/
 
+
 /*Inicio del GRID*/
 
 .header {
     grid-area: header;
 }
+
 
 .contenido__banner {
     grid-area: banner;
@@ -415,6 +425,7 @@ footer .copy {
     grid-area: videos;
 }
 
+
 .contenedor__blog{
     width: 100%;    
     display: grid;
@@ -445,6 +456,7 @@ footer .copy {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
+
 
 @media (max-width: 1300px) {
     .checkbtn {
@@ -493,6 +505,7 @@ footer .copy {
         text-align: center;
         line-height: 1;
     }
+
 
     
     .banner__desde {
@@ -546,7 +559,9 @@ footer .copy {
     }
 
 
+
 }
+
 
 
 @media (max-width: 1050px) {
@@ -650,7 +665,9 @@ footer .copy {
     }
 
 
+
 }
+
 
 @media (max-width: 800px) {
     .checkbtn {
@@ -677,6 +694,7 @@ footer .copy {
     .contenido__suscripcion{
         font-size: 1.4em;
     }
+
 
 
 @media (max-width: 490px) {
@@ -782,6 +800,7 @@ footer .copy {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+
 
 
 }

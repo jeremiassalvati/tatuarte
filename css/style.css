@@ -29,8 +29,9 @@ nav {
     margin-left: 20px;
     font-size: 2em;
     line-height: 80px;
-    background: #edff00);
-  
+    background: linear-gradient(to right, #fff 4%, #edff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
@@ -53,10 +54,28 @@ nav ul li a {
     text-transform: uppercase;
 }
 
+li a.active,
+li a:hover {
+    background: #edff00;
+    transition: .5s;
+    color: black;
+}
 
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
 
 /*Fin barra de navegacion*/
-
 
 
 h1 {
@@ -98,7 +117,6 @@ h2 {
     margin: 50px auto;
 }
 
-
 /*Inicio formulario de subscripcion*/
 .contenido__suscripcion {
     font-size: 1.5rem;
@@ -107,7 +125,6 @@ h2 {
     color: #fff;
     align-items: center;
     margin-bottom: 3em;
-
 
 }
 
@@ -141,11 +158,14 @@ h2 {
 
 }
 
-
+.contenido__suscripcion form .boton__sub:hover {
+    background: #edff00;
+    transition: .5s all;
+    color: black;
+}
 
 /*Fin formulario de subscripcion*/
 /*Fin página INICIO*/
-
 
 /*Específicos página NOSOTROS*/
 .foto__local {
@@ -155,7 +175,6 @@ h2 {
 
 /*Fin  NOSOTROS*/
 
-
 /*Específicos página UBICACION*/
 .ubicacion__mapa {
     margin-bottom: 2em;    
@@ -164,7 +183,6 @@ h2 {
 }
 
 /*Fin  UBICACION*/
-
 
 
 
@@ -189,7 +207,6 @@ h2 {
     align-items: center; 
     margin-top: -5%;
 }
-
 
 .contacto
 {
@@ -225,7 +242,6 @@ h2 {
     padding: 30px;
     text-align: center;
 }
-
 
 .contact-form-txt
 {
@@ -277,7 +293,6 @@ h2 {
 /*Fin CONTACTO*/
 
 
-
 /*Inicio del FOOTER*/
 footer {
     background-color: #edff00;
@@ -316,13 +331,11 @@ footer .copy {
 
 /*Fin del footer*/
 
-
 /*Inicio del GRID*/
 
 .header {
     grid-area: header;
 }
-
 
 .contenido__banner {
     grid-area: banner;
@@ -402,7 +415,6 @@ footer .copy {
     grid-area: videos;
 }
 
-
 .contenedor__blog{
     width: 100%;    
     display: grid;
@@ -433,7 +445,6 @@ footer .copy {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
-
 
 @media (max-width: 1300px) {
     .checkbtn {
@@ -482,7 +493,6 @@ footer .copy {
         text-align: center;
         line-height: 1;
     }
-
 
     
     .banner__desde {
@@ -536,9 +546,7 @@ footer .copy {
     }
 
 
-
 }
-
 
 
 @media (max-width: 1050px) {
@@ -642,9 +650,7 @@ footer .copy {
     }
 
 
-
 }
-
 
 @media (max-width: 800px) {
     .checkbtn {
@@ -671,7 +677,6 @@ footer .copy {
     .contenido__suscripcion{
         font-size: 1.4em;
     }
-
 
 
 @media (max-width: 490px) {
@@ -777,7 +782,6 @@ footer .copy {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-
 
 
 }

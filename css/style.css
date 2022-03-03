@@ -5,6 +5,7 @@
     list-style: none;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: url(../img/guante.png), auto;
 }
 
 body {
@@ -12,9 +13,18 @@ body {
     background-color: #081c16;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-
+    min-height: 100vh;  
 }
+
+
+a, .boton{
+    cursor: url(../img/maquina.png), auto;
+    text-decoration: none;
+}
+
+/*.botton:hover{
+    cursor: url(../img/maquina1.png),auto;
+}*/
 
 /*Inicio barra navegacion*/
 nav {
@@ -59,6 +69,7 @@ li a:hover {
     background: #edff00;
     transition: .5s;
     color: black;
+  
 }
 
 .checkbtn {
@@ -67,7 +78,7 @@ li a:hover {
     float: right;
     line-height: 80px;
     margin-right: 40px;
-    cursor: pointer;
+    /*cursor: pointer;*/
     display: none;
 }
 
@@ -84,13 +95,6 @@ h1 {
     margin-bottom: 2em;
     font-size: 3rem;
     color: #edff00;
-    text-align: center;
-    line-height: 1px;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 2em;
     text-align: center;
     line-height: 1px;
 }
@@ -115,8 +119,17 @@ h2 {
     font-size: 1.6em;
     color: #ffffff;
     width: 80%;
-    margin: 50px auto;
+    margin: auto;
 }
+
+.contenido__parrafos__blog {
+    text-align: justify;
+    font-size: 1.6em;
+    color: #ffffff;
+    width: 100%;
+    margin: auto;
+}
+
 
 
 /*Inicio formulario de subscripcion*/
@@ -152,13 +165,14 @@ h2 {
 .boton {
     width: 150px;
     height: 50px;
+    font-size: .8em;
     padding: 15px 15px;
     border: solid 1px;
     border-color: #edff00;
     border-radius: 0px 3px 3px 0px;
     background-color: transparent;
     color: white;
-    cursor: pointer;
+   /*/ cursor: pointer;*/
     outline: 0px;
 
 }

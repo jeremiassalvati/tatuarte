@@ -1,0 +1,19 @@
+/*Clases modificadas de Bootstrap*/
+.card{
+    color: #fff;
+    background-color: $colorPrimario;
+    padding: 20px;
+    border: 1px solid #bcbcbc;
+    box-shadow: 0px 0px 3px 0px #fff;
+    border-radius: 10px;
+}
+.btn-outline-primary{
+    border-color: $colorSecundario;    
+    color: $colorTexto;
+}
+.card a:hover {
+    background-color: $colorSecundario;    
+    border-color: $colorSecundario;
+    transition: .5s;
+    color: black;
+}

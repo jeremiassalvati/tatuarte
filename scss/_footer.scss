@@ -1,0 +1,29 @@
+footer {
+    background-color: $colorSecundario;    
+    padding: 1em 0;
+    text-align: center;
+    margin-top: auto;
+}
+footer .titulo-seccion {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+footer .copy {
+    display: flex;
+    justify-content: center;
+}
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.redes-sociales i {
+    font-size: 1.5rem;
+    padding: 0 15px 0 15px;
+}
+.redes-sociales a {
+    font-size: 1.5rem;
+    padding: 0 15px 0 15px;
+    color: black;
+}

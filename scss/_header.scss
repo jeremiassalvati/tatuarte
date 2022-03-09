@@ -1,0 +1,55 @@
+nav {
+    height: 80px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.logo {
+    position: absolute;
+    float: left;
+    margin-left: 20px;
+    font-size: 2em;
+    line-height: 80px;
+    background: linear-gradient(to right, #fff 4%, $colorSecundario);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: $colorTexto;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active,
+li a:hover {
+    background: $colorSecundario;
+    transition: .5s;
+    color: $colorPrimario;  
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: $colorTexto;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+
+#check {
+    display: none;
+}

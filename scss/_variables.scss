@@ -3,6 +3,18 @@ $colorSecundario: #edff00;
 $colorCajas: #0e08084b;
 $colorTexto: #ffffff;
 
+//Paleta de colores
+$colores:(
+    "primario": $colorPrimario,
+    "secundario": $colorSecundario,
+    "cajas": $colorCajas,
+    "textos": $colorTexto,
+    "rojo": #FF0000,
+    "negro": #000000,
+    "azul":	#0000FF,
+    "gris":	#808080,
+    "verde":#008000,
+);
 
 
 

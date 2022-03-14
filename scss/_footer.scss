@@ -1,5 +1,5 @@
 footer {
-    background-color: $colorSecundario;    
+    background-color: map-get($colores, "secundario");    
     padding: 1em 0;
     text-align: center;
     margin-top: auto;

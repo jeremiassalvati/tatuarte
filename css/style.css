@@ -37,6 +37,9 @@ a, .boton {
   transition: .5s;
   color: black; }
 
+.card img {
+  height: 280px; }
+
 nav {
   height: 80px;
   width: 100%;
@@ -93,6 +96,15 @@ h1 {
   text-align: center;
   line-height: 1px; }
 
+h2 {
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-bottom: 1.5em;
+  font-size: 2.5rem;
+  color: #edff00;
+  text-align: center;
+  line-height: 1px; }
+
 .contenido__suscripcion {
   font-size: 1.5rem;
   display: flex;
@@ -138,9 +150,9 @@ h1 {
     color: #081c16; }
 
 .menu__contacto {
-  font-size: 2.5em;
   width: 100%;
   height: 100vh;
+  font-size: 2.5em;
   display: grid;
   align-items: center;
   margin-top: -5%; }
@@ -202,6 +214,7 @@ h1 {
 
 .contacto__formulario .boton {
   width: 100%;
+  height: auto;
   outline: none;
   border-radius: 3px;
   text-transform: uppercase;
@@ -237,17 +250,8 @@ footer .copy {
   padding: 0 15px 0 15px;
   color: black; }
 
-.subtitulos {
-  text-transform: uppercase;
-  margin-top: 3rem;
-  margin-bottom: 1.5em;
-  font-size: 2.5rem;
-  color: #edff00;
-  text-align: center;
-  line-height: 1px; }
-
 /*Especificos pagina INICIO*/
-.contenido__banner {
+.contenido__banner, .banner__desde {
   margin-top: 6%;
   margin-bottom: 14%;
   font-size: 10em;
@@ -256,18 +260,8 @@ footer .copy {
   line-height: 1; }
 
 .banner__desde {
-  font-size: 0.8em; }
-
-.contenido__banner {
-  margin-top: 6%;
-  margin-bottom: 14%;
-  font-size: 10em;
-  color: #fff;
-  text-align: center;
-  line-height: 1; }
-
-.banner__desde {
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  margin-top: 0; }
 
 .contenido__parrafos {
   text-align: justify;
@@ -284,6 +278,7 @@ footer .copy {
     display: block; }
   ul {
     position: fixed;
+    z-index: 3;
     width: 100%;
     height: 100vh;
     background: #edff00;
@@ -310,7 +305,7 @@ footer .copy {
     background: none; }
   #check:checked ~ ul {
     left: 0; }
-  .contenido__banner {
+  .contenido__banner, .banner__desde {
     margin-top: 3%;
     margin-bottom: 2%;
     /*margin-top: 1rem;*/
@@ -324,9 +319,9 @@ footer .copy {
     font-size: 2rem; } }
 
 @media (max-width: 1360px) {
-  .contenido__banner {
+  .contenido__banner, .banner__desde {
     margin-top: 0; }
-  .contenido__banner p {
+  .contenido__banner p, .banner__desde p {
     font-size: 80%; } }
 
 @media (max-width: 1050px) {
@@ -361,7 +356,7 @@ footer .copy {
     background: none; }
   #check:checked ~ ul {
     left: 0; }
-  .contenido__banner {
+  .contenido__banner, .banner__desde {
     margin-top: 3%;
     margin-bottom: 2%;
     font-size: 5em;
@@ -378,7 +373,7 @@ footer .copy {
 @media (max-width: 840px) {
   .checkbtn {
     display: block; }
-  .contenido__banner {
+  .contenido__banner, .banner__desde {
     margin-top: 3%;
     margin-bottom: 2%;
     font-size: 4em;
@@ -420,7 +415,7 @@ footer .copy {
     background: none; }
   #check:checked ~ ul {
     left: 0; }
-  .contenido__banner {
+  .contenido__banner, .banner__desde {
     margin-top: 3%;
     margin-bottom: 2%;
     font-size: 3em;

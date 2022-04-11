@@ -487,8 +487,7 @@ footer .titulo-seccion {
 .sec2 {
   padding: 1%;
   background-color: #ffffff;
-  height: 100vh;
-  overflow: hidden;
+  height: 110vh;
   border-bottom: solid 5px black; }
 
 .vanguardia {
@@ -517,21 +516,12 @@ footer .titulo-seccion {
 
 .contenedor__video {
   position: relative;
-  overflow: hidden;
   padding-top: 56.25%; }
 
 .contenedor__video iframe {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%; }
-
-.contenedor__video__contenido {
-  position: relative;
-  overflow: hidden; }
-
-.contenedor__video_contenido iframe {
   width: 100%;
   height: 100%; }
 

@@ -5,17 +5,20 @@
     list-style: none;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    cursor: url(../img/guante.png), auto;
+    cursor: url(../img/maquina.png), auto;
 }
 body {
     margin: 0;
-    background-color: $colorPrimario;
     display: flex;
     flex-direction: column;
     min-height: 100vh;  
+    background-color: $colorPrimario;
 }
-
-a, .boton{
-    cursor: url(../img/maquina.png), auto;
+a .boton{
+    cursor: url(../img/guante.png), auto;
     text-decoration: none;
+}
+a{
+    text-decoration: none;
+    cursor: url(../img/guante.png), auto;
 }

@@ -3,15 +3,45 @@ footer {
     padding: 1em 0;
     text-align: center;
     margin-top: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  
+}
+.navegador ul {
+    float: right;
+    margin-right: 20px;
+}
+.navavegador ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.navegador ul li a {
+    color: $colorPrimario;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    &:hover {        
+        transition: .5s all;
+        color: black;
+        font-size: 1.5em;   
+    }
 }
 footer .titulo-seccion {
     display: flex;
     justify-content: center;
     margin-bottom: 1em;
 }
-footer .copy {
-    display: flex;
-    justify-content: center;
+.copy__a{
+    text-decoration: none;
+    color: $colorPrimario;
+    &:hover {        
+        transition: .5s all;
+        color: black;
+        font-size: 1.1em;    
+        cursor: pointer;      
+    }
 }
 .redes-sociales {
     display: flex;
@@ -26,4 +56,109 @@ footer .copy {
     font-size: 1.5rem;
     padding: 0 15px 0 15px;
     color: black;
+    &:hover {        
+        transition: .5s all;
+        color: black;
+        font-size: 1.8rem;   
+    }
 }
+.navegador{
+    display: flex;
+    justify-content: space-between;
+}
+.lista__derecha {
+display: flex;
+align-self: flex-end;
+}
+.frases{
+    display: flex;
+    align-self: start;
+    font-size: 4em;
+    margin-left: 10%;
+}
+.logo__pie {
+    margin-left: 20px;
+    font-size: 5rem;
+    line-height: 80px;
+    color: $colorPrimario;
+}
+.navegador{
+    display: flex;
+    align-items:flex-end
+}
+.navegador ul {
+    float: right;
+    margin-right: 20px;
+}
+.navegador ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.secciones__pie{
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: auto;
+    margin-top: auto;
+} 
+.lista__contactanos{
+    display:flex;
+    flex-direction: column;
+    
+}
+.caja__contactos{
+    display: flex;
+    justify-content: space-between;
+}
+.caja__contactos div{
+    margin: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+//INICIO SECCION FRASES
+.frases{
+    display: block;
+}
+.frases .texto__estatico{
+    font-weight: 400;
+}
+.frases .texto__dinamico{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.texto__dinamico li{
+    color: $colorPrimario;
+    list-style: none;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top:-360px;
+    }    
+}
+.texto__dinamico li span{
+    position: relative;
+}
+.texto__dinamico li span::after{
+    content: "";
+    position: absolute;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: $colorSecundario;
+    border-left: 2px solid $colorPrimario;
+    animation: typing 3s steps(15) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 -35px;
+    }
+}
+//FIN SECCION FRASES

@@ -2,7 +2,6 @@
     width: $width;
     height: $height;    
 }
-
 .menu__contacto{
     @include size(100%,100vh);
     font-size: 2.5em;
@@ -61,10 +60,11 @@
     color: #aaa;
 }
 .contacto__formulario .boton{
-    @include size(100%,auto) 
+    @include size(100%,auto);
     outline: none;
     border-radius: 3px;     
     text-transform: uppercase;
     padding: 10px 0;  
     font-size: 18px;
+    cursor: url(../img/guante.png), auto;
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -5,18 +7,22 @@
   list-style: none;
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  cursor: url(../img/guante.png), auto; }
+  cursor: url(../img/maquina.png), auto; }
 
 body {
   margin: 0;
-  background-color: #081c16;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #081c16; }
 
-a, .boton {
-  cursor: url(../img/maquina.png), auto;
+a .boton {
+  cursor: url(../img/guante.png), auto;
   text-decoration: none; }
+
+a {
+  text-decoration: none;
+  cursor: url(../img/guante.png), auto; }
 
 /*Clases modificadas de Bootstrap*/
 .card {
@@ -40,7 +46,11 @@ a, .boton {
 .card img {
   height: 280px; }
 
+header {
+  background-color: #081c16; }
+
 nav {
+  background-color: #081c16;
   height: 80px;
   width: 100%;
   margin-top: 40px; }
@@ -111,12 +121,15 @@ h2 {
   flex-direction: column;
   color: #ffffff;
   align-items: center;
-  margin: 3em auto;
-  background-color: #081c16;
-  width: 50%;
+  margin: auto;
+  background-color: rgba(5, 7, 12, 0.4);
+  width: 35%;
   padding: 1em;
   border-radius: 10px;
-  box-shadow: 0px 0px 3px 0px #fff; }
+  box-shadow: 0px 0px 3px 0px #fff;
+  animation: fadeIn;
+  animation-duration: 3s;
+  overflow: hidden; }
 
 .contenido__suscripcion form {
   padding-top: 1em;
@@ -147,7 +160,8 @@ h2 {
   .boton:hover {
     background-color: #edff00;
     transition: .5s all;
-    color: #081c16; }
+    color: #081c16;
+    cursor: url(../img/guante.png), auto; }
 
 .menu__contacto {
   width: 100%;
@@ -219,22 +233,51 @@ h2 {
   border-radius: 3px;
   text-transform: uppercase;
   padding: 10px 0;
-  font-size: 18px; }
+  font-size: 18px;
+  cursor: url(../img/guante.png), auto; }
 
 footer {
   background-color: #edff00;
   padding: 1em 0;
   text-align: center;
-  margin-top: auto; }
+  margin-top: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.navegador ul {
+  float: right;
+  margin-right: 20px; }
+
+.navavegador ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px; }
+
+.navegador ul li a {
+  color: #081c16;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase; }
+  .navegador ul li a:hover {
+    transition: .5s all;
+    color: black;
+    font-size: 1.5em; }
 
 footer .titulo-seccion {
   display: flex;
   justify-content: center;
   margin-bottom: 1em; }
 
-footer .copy {
-  display: flex;
-  justify-content: center; }
+.copy__a {
+  text-decoration: none;
+  color: #081c16; }
+  .copy__a:hover {
+    transition: .5s all;
+    color: black;
+    font-size: 1.1em;
+    cursor: pointer; }
 
 .redes-sociales {
   display: flex;
@@ -249,31 +292,311 @@ footer .copy {
   font-size: 1.5rem;
   padding: 0 15px 0 15px;
   color: black; }
+  .redes-sociales a:hover {
+    transition: .5s all;
+    color: black;
+    font-size: 1.8rem; }
+
+.navegador {
+  display: flex;
+  justify-content: space-between; }
+
+.lista__derecha {
+  display: flex;
+  align-self: flex-end; }
+
+.frases {
+  display: flex;
+  align-self: start;
+  font-size: 4em;
+  margin-left: 10%; }
+
+.logo__pie {
+  margin-left: 20px;
+  font-size: 5rem;
+  line-height: 80px;
+  color: #081c16; }
+
+.navegador {
+  display: flex;
+  align-items: flex-end; }
+
+.navegador ul {
+  float: right;
+  margin-right: 20px; }
+
+.navegador ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px; }
+
+.secciones__pie {
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: auto;
+  margin-top: auto; }
+
+.lista__contactanos {
+  display: flex;
+  flex-direction: column; }
+
+.caja__contactos {
+  display: flex;
+  justify-content: space-between; }
+
+.caja__contactos div {
+  margin: auto;
+  margin-right: 20px;
+  margin-left: 20px; }
+
+.frases {
+  display: block; }
+
+.frases .texto__estatico {
+  font-weight: 400; }
+
+.frases .texto__dinamico {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden; }
+
+.texto__dinamico li {
+  color: #081c16;
+  list-style: none;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite; }
+
+@keyframes slide {
+  100% {
+    top: -360px; } }
+
+.texto__dinamico li span {
+  position: relative; }
+
+.texto__dinamico li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #edff00;
+  border-left: 2px solid #081c16;
+  animation: typing 3s steps(15) infinite; }
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 -35px; } }
 
 /*Especificos pagina INICIO*/
-.contenido__banner, .banner__desde {
-  margin-top: 6%;
-  margin-bottom: 14%;
+.contenido__banner, .banner__desde, .enter, .subir, .nosotros, .vanguardia, .tatuarte, .exclusivos {
+  margin-top: 4%;
+  margin-bottom: 4%;
   font-size: 10em;
   color: #fff;
   text-align: center;
   line-height: 1; }
 
 .banner__desde {
-  font-size: 0.8em;
-  margin-top: 0; }
+  font-size: 0.6em;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.enter, .subir {
+  font-size: 4em;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  display: block;
+  animation: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+.subir {
+  margin: auto;
+  margin-top: 100px; }
+
+.sec0 {
+  width: 100%;
+  height: 100vh;
+  background-color: #081c16; }
+
+.sec1 {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/home/tatuarte-local.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-right: 0%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end; }
+
+.sec1__sub {
+  width: 100%;
+  margin: auto;
+  background: #081c16;
+  display: flex;
+  border-bottom: solid 5px black; }
+
+.nosotros, .vanguardia, .tatuarte, .exclusivos {
+  font-size: 5em;
+  text-align: left;
+  padding-left: 1em;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  animation: fadeIn;
+  animation-duration: 2s; }
 
 .contenido__parrafos {
   text-align: justify;
   font-size: 1.6em;
   color: #ffffff;
-  margin: auto; }
+  margin: auto;
+  padding: 1em;
+  border-radius: 5px; }
 
-.intro {
-  width: 80%; }
+.intro, .equipo {
+  width: 90%;
+  animation: fadeIn;
+  animation-duration: 3s; }
+
+.sec1__sub2 {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/home/tatuarte-dentro.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  border-bottom: solid 5px black; }
+
+.sec1__sub3 {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/home/estudio-10.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  border-bottom: solid 5px black; }
+
+.sec2 {
+  padding: 1%;
+  background-color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+  border-bottom: solid 5px black; }
+
+.vanguardia {
+  color: #081c16;
+  animation: fadeIn;
+  animation-duration: 3s; }
+
+.equipo {
+  color: #081c16;
+  animation: fadeIn;
+  animation-duration: 3s; }
+
+.flex {
+  display: flex;
+  flex-direction: row; }
+
+.tatuarte {
+  color: #ffffff;
+  font-size: 12em; }
+
+.sec3 {
+  min-height: 120vh;
+  background-color: #000;
+  padding: 5%;
+  display: flex; }
+
+.contenedor__video {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; }
+
+.contenedor__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.contenedor__video__contenido {
+  position: relative;
+  overflow: hidden; }
+
+.contenedor__video_contenido iframe {
+  width: 100%;
+  height: 100%; }
+
+.sec6 {
+  background-color: #000;
+  padding: 5%; }
+
+.exclusivos {
+  color: #edff00; }
+
+.cursor__pointer {
+  cursor: pointer;
+  cursor: url(../img/guante.png), auto; }
 
 /*Fin pagina INICIO*/
-@media (max-width: 1300px) {
+@media (max-width: 1360px) {
+  .contenido__banner, .banner__desde, .enter, .subir, .nosotros, .vanguardia, .tatuarte, .exclusivos {
+    margin-top: 10%;
+    font-size: 7em;
+    color: #fff;
+    text-align: center;
+    line-height: 1; }
+    .contenido__banner .banner__desde, .banner__desde .banner__desde, .enter .banner__desde, .subir .banner__desde, .nosotros .banner__desde, .vanguardia .banner__desde, .tatuarte .banner__desde, .exclusivos .banner__desde {
+      font-size: 3rem;
+      margin-top: 0px; }
+  .enter, .subir {
+    font-size: 2.5rem; }
+  .tatuarte {
+    font-size: 6rem; }
+  .contenido__suscripcion form .campo {
+    width: 150px;
+    font-size: 70%; }
+  .contenido__suscripcion form .boton {
+    width: 150px;
+    font-size: 70%; } }
+
+@media (max-width: 1274px) {
+  .contenido__banner, .banner__desde, .enter, .subir, .nosotros, .vanguardia, .tatuarte, .exclusivos {
+    margin-top: 10%;
+    font-size: 7em;
+    color: #fff;
+    text-align: center;
+    line-height: 1; }
+    .contenido__banner .banner__desde, .banner__desde .banner__desde, .enter .banner__desde, .subir .banner__desde, .nosotros .banner__desde, .vanguardia .banner__desde, .tatuarte .banner__desde, .exclusivos .banner__desde {
+      font-size: 3rem;
+      margin-top: 0px; }
+  .enter, .subir {
+    font-size: 2.5rem;
+    margin-top: 20%; }
+  .tatuarte {
+    font-size: 6rem; }
+  .contenido__suscripcion form .campo {
+    width: 150px;
+    font-size: 70%; }
+  .contenido__suscripcion form .boton {
+    width: 150px;
+    font-size: 70%; }
+  .lista__derecha {
+    display: flex;
+    align-self: start;
+    margin-top: 25px; }
+  .navegador ul li {
+    line-height: 5px; } }
+
+@media (max-width: 1024px) {
   .checkbtn {
     display: block; }
   ul {
@@ -305,92 +628,71 @@ footer .copy {
     background: none; }
   #check:checked ~ ul {
     left: 0; }
-  .contenido__banner, .banner__desde {
-    margin-top: 3%;
-    margin-bottom: 2%;
-    /*margin-top: 1rem;*/
-    font-size: 7em;
+  .contenido__banner, .banner__desde, .enter, .subir, .nosotros, .vanguardia, .tatuarte, .exclusivos {
+    margin-top: 10%;
+    font-size: 6em;
     color: #fff;
     text-align: center;
     line-height: 1; }
-  .banner__desde {
-    font-size: 0.65em; }
+    .contenido__banner .banner__desde, .banner__desde .banner__desde, .enter .banner__desde, .subir .banner__desde, .nosotros .banner__desde, .vanguardia .banner__desde, .tatuarte .banner__desde, .exclusivos .banner__desde {
+      font-size: 3rem;
+      margin-top: 0px; }
   .contenido__parrafos {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .enter, .subir {
+    margin-top: 25%;
+    font-size: 3rem; }
+  .texto__dinamico {
+    visibility: hidden; }
+  .caja__contactos {
+    display: flex;
+    flex-direction: column; }
+  .contenido__suscripcion {
+    width: 500px; } }
 
-@media (max-width: 1360px) {
-  .contenido__banner, .banner__desde {
-    margin-top: 0; }
-  .contenido__banner p, .banner__desde p {
-    font-size: 80%; } }
-
-@media (max-width: 1050px) {
+@media (max-width: 840px) {
   .checkbtn {
     display: block; }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #edff00;
-    top: 120px;
-    left: -100%;
-    transition: all .5s;
-    align-items: center;
-    text-align: center;
-    transition: all .5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 1rem; }
-  nav ul li {
-    display: block;
-    margin: 30px;
-    line-height: 30px;
-    width: 600px; }
-  nav ul li a {
-    font-size: 1.5em;
-    color: black; }
-  li a:hover,
-  li a.active {
-    background: none; }
-  #check:checked ~ ul {
-    left: 0; }
-  .contenido__banner, .banner__desde {
-    margin-top: 3%;
+  .contenido__banner, .banner__desde, .enter, .subir, .nosotros, .vanguardia, .tatuarte, .exclusivos {
+    margin-top: 25%;
     margin-bottom: 2%;
     font-size: 5em;
     color: #fff;
     text-align: center;
     line-height: 1; }
-  .banner__desde {
-    font-size: 0.65em; }
-  .contenido__parrafos {
-    font-size: 2rem; }
-  .contenido__suscripcion {
-    font-size: 1.5em; } }
-
-@media (max-width: 840px) {
-  .checkbtn {
-    display: block; }
-  .contenido__banner, .banner__desde {
-    margin-top: 3%;
-    margin-bottom: 2%;
-    font-size: 4em;
-    color: #fff;
-    text-align: center;
-    line-height: 1; }
-  .banner__desde {
-    font-size: 0.5em; }
+    .contenido__banner .banner__desde, .banner__desde .banner__desde, .enter .banner__desde, .subir .banner__desde, .nosotros .banner__desde, .vanguardia .banner__desde, .tatuarte .banner__desde, .exclusivos .banner__desde {
+      font-size: 0.5em; }
+  .enter, .subir {
+    margin-top: 35%;
+    font-size: 3rem; }
   .contenido__parrafos {
     font-size: 1.6rem;
     line-height: 1.8; }
   .contenido__suscripcion {
-    font-size: 1.4em; }
-  .contenido__suscripcion {
-    width: 80%; } }
+    font-size: 1.4em;
+    width: 90%;
+    margin-bottom: 15%; }
+  .texto__dinamico {
+    visibility: hidden; }
+  .titulo-seccion {
+    margin-top: 10%; }
+  .secciones__pie {
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+  .caja__contactos {
+    display: flex;
+    flex-direction: column; }
+  .redes-sociales {
+    margin-bottom: 10px; }
+  .contenido__suscripcion form .campo {
+    width: 50%;
+    font-size: 70%; }
+  .contenido__suscripcion form .boton {
+    width: 30%;
+    font-size: 70%; } }
 
-@media (max-width: 490px) {
+@media (max-width: 520px) {
   .checkbtn {
     display: block; }
   ul {
@@ -415,19 +717,59 @@ footer .copy {
     background: none; }
   #check:checked ~ ul {
     left: 0; }
-  .contenido__banner, .banner__desde {
-    margin-top: 3%;
-    margin-bottom: 2%;
-    font-size: 3em;
+  .contenido__banner, .banner__desde, .enter, .subir, .nosotros, .vanguardia, .tatuarte, .exclusivos {
+    margin-top: 150px;
+    font-size: 5em;
     color: #fff;
     text-align: center;
     line-height: 1; }
   .banner__desde {
+    margin-top: 50px;
     font-size: 0.6em; }
-  .contenido__parrafos .intro {
+  .enter, .subir {
+    font-size: 2em; }
+  .contenido__parrafos .intro, .contenido__parrafos .equipo {
     font-size: .8em;
     max-width: 70%; }
+  .exclusivos {
+    font-size: 2em; }
+  .nosotros, .vanguardia, .tatuarte, .exclusivos {
+    font-size: 2em; }
   .contenido__suscripcion {
-    font-size: 1em; }
+    font-size: 1em;
+    margin-bottom: 100px; }
   .subtitulos {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .secciones__pie {
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+  .caja__contactos {
+    display: flex;
+    flex-direction: column; }
+  .redes-sociales {
+    margin-bottom: 10px; }
+  .contenido__suscripcion form .campo {
+    width: 155px;
+    font-size: 70%; }
+  .contenido__suscripcion form .boton {
+    width: 87px;
+    font-size: 70%; }
+  .vanguardia {
+    margin: auto; }
+  .exclusivos {
+    margin: auto;
+    padding: 20px; }
+  .nosotros, .vanguardia, .tatuarte, .exclusivos {
+    margin: auto; }
+  .sec2 {
+    height: 40vh; }
+  .sec3 {
+    display: flex;
+    flex-direction: column; }
+  .frases {
+    margin: auto; }
+  .texto__dinamico {
+    visibility: hidden; }
+  footer .titulo-seccion {
+    margin-top: 15px; } }
